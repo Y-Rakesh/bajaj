@@ -62,8 +62,9 @@ app.post("/bfhl", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Full Stack API is running  ");
+  res.redirect("/bfhl");
 });
+
 
 
 const PORT = process.env.PORT || 3000;
